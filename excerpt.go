@@ -8,8 +8,8 @@ import (
 	"github.com/kennygrant/sanitize"
 )
 
-// Excerpt generates excerpt with word length w from input s.
-func Excerpt(s string, w int) string {
+// Make generates excerpt with word length w from input s.
+func Make(s string, w int) string {
 	scanner := bufio.NewScanner(strings.NewReader(s))
 	scanner.Split(bufio.ScanWords)
 	count := 0
